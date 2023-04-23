@@ -1,0 +1,32 @@
+$cl-font-family-primary: "BebasNeue";
+$cl-font-family-secondary: "ChakraPetch";
+
+$cl-containers: (
+  xs: calc(100% - 24px),
+  sm: calc(100% - 32px),
+  md: calc(100% - 40px),
+  lg: calc(100% - 48px),
+  // xl: 1252px,
+  xl: calc(100% - 56px),
+);
+
+$cl-breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1300px,
+);
+
+$cl-colors: (
+  general: (
+    purple: #650067,
+    black: #000000,
+    white: #ffffff,
+    backgroundColor: linear-gradient(90.32deg, #000000 0.24%, #650067 99.7%),
+  ),
+  text: (
+    textcolor: #ffffff,
+    textcolor-70: rgba(255, 255, 255, 0.7),
+  ),
+);

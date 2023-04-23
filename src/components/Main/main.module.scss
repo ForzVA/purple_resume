@@ -1,0 +1,61 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+
+  &__info {
+    margin-top: 120px;
+
+    &__text {
+      display: flex;
+      padding: 20px 0;
+      flex-direction: column;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      align-items: left;
+
+      &__name {
+        font-size: 50px;
+      }
+
+      &__position {
+        font-size: 35px;
+      }
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+      gap: 15px;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    width: auto;
+    padding: 0 32px;
+    flex-direction: column;
+    position: relative;
+    transform: rotate(-7.36deg);
+
+    &__rope {
+      margin: auto;
+    }
+
+    &__duck {
+      position: absolute;
+      top: 25px;
+    }
+
+    &__img {
+      width: 400px;
+      position: relative;
+      border-radius: 15px 30px 15px 30px;
+      top: -3px;
+      border: 3px dashed rgba(255, 255, 255, 1);
+    }
+  }
+}

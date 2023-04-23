@@ -1,0 +1,44 @@
+@import "/src/scss/variables.scss";
+@import "src/scss/mixins";
+
+.root {
+  $width: map-get($cl-containers, xs);
+
+  margin: 0 auto;
+
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+
+  @include breakpoint("sm") {
+    $width: map-get($cl-containers, sm);
+
+    width: $width;
+    min-width: $width;
+    max-width: $width;
+  }
+
+  @include breakpoint("md") {
+    $width: map-get($cl-containers, md);
+
+    width: $width;
+    min-width: $width;
+    max-width: $width;
+  }
+
+  @include breakpoint("lg") {
+    $width: map-get($cl-containers, lg);
+
+    width: $width;
+    min-width: $width;
+    max-width: $width;
+  }
+
+  @include breakpoint("xl") {
+    $width: map-get($cl-containers, xl);
+
+    width: $width;
+    min-width: $width;
+    max-width: $width;
+  }
+}
