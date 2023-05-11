@@ -1,0 +1,126 @@
+@import "/src/scss/variables.scss";
+
+.block {
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 15px;
+  padding: 10px 20px;
+  backdrop-filter: blur(35px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 11px 12px 5px -5px rgba(0, 0, 0, 0.4);
+
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    padding-left: 15px;
+    border-left: 4px solid rgb(255, 255, 255);
+
+    &_text {
+      max-height: min-content;
+      text-align: left;
+      color: get-color(text, white);
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+
+  &_text {
+    color: get-color(text, white);
+    font-size: 30px;
+    text-align: left;
+    font-weight: 300;
+    line-height: calc(30px * 1.4);
+
+    &_open {
+      max-height: 500px;
+      transition: 1.5s ease;
+      animation: textAppearance 0.6s cubic-bezier(0.4, 0, 1, 1);
+      margin-top: 20px;
+    }
+
+    &_close {
+      max-height: 0px;
+      opacity: 0%;
+      visibility: hidden;
+      transition: 0.5s ease;
+      animation: textDisappearing 0.4s cubic-bezier(0.4, 0, 1, 1);
+      margin-top: 0px;
+    }
+  }
+
+  .dropdown_strokeDown,
+  .dropdown_strokeUp {
+    animation: strokeAnimation 0.4s ease;
+  }
+}
+
+@media (max-width: 1024px) {
+  .block {
+    width: auto;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    &_title {
+      &_text {
+        font-size: 25px;
+      }
+      &_dropdown svg {
+        padding-top: 5px;
+        height: 20px;
+        width: 35px;
+      }
+    }
+
+    &_text {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .block {
+    padding: 10px 10px;
+    &_title {
+      margin: 10px 0px;
+      &_text {
+        font-size: 20px;
+      }
+    }
+    &_text {
+      font-size: 16px;
+      &_open {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@keyframes textAppearance {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textDisappearing {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes strokeAnimation {
+  0% {
+    transform: scale(0.5) rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

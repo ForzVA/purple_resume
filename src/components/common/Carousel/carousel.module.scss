@@ -1,0 +1,36 @@
+.root {
+  height: 100%;
+  position: relative;
+
+  &__leftArrow {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__rightArrow {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    // background-position: center;
+    // background-size: cover;
+  }
+}

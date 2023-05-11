@@ -1,13 +1,14 @@
 $cl-font-family-primary: "BebasNeue";
 $cl-font-family-secondary: "ChakraPetch";
+$cl-font-family-third: "Rubik";
 
 $cl-containers: (
   xs: calc(100% - 24px),
   sm: calc(100% - 32px),
   md: calc(100% - 40px),
   lg: calc(100% - 48px),
-  // xl: 1252px,
-  xl: calc(100% - 56px),
+  xl: 1752px,
+  // xl: calc(100% - 56px),
 );
 
 $cl-breakpoints: (
@@ -15,7 +16,7 @@ $cl-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1300px,
+  xl: 1920px,
 );
 
 $cl-colors: (
@@ -27,6 +28,19 @@ $cl-colors: (
   ),
   text: (
     textcolor: #ffffff,
-    textcolor-70: rgba(255, 255, 255, 0.7),
+    text-70: rgba(255, 255, 255, 0.7),
+  ),
+  hardSkills: (
+    background: rgba(101, 0, 103, 0.5),
+    hover: rgba(101, 0, 103, 0.3),
+    shadow: #ff00f5,
+    windowBack: rgba(217, 217, 217, 0.1),
+    searchPanel: rgba(217, 217, 217, 0.1),
+    activeText: rgba(101, 0, 103),
+  ),
+
+  certificates: (
+    background: rgba(101, 0, 103, 0.8),
+    shadow: rgba(255, 0, 245, 0.8),
   ),
 );

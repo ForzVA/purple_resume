@@ -1,0 +1,131 @@
+@import "./variables.scss";
+
+// Bebas Neue
+@font-face {
+  font-family: $cl-font-family-primary;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.woff") format("woff"),
+    url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("ttf"),
+    url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.eot") format("eot");
+  font-display: swap;
+}
+
+// Chakra Petch
+@font-face {
+  font-family: $cl-font-family-secondary;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Light.woff") format("woff"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Light.ttf") format("ttf"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Light.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $cl-font-family-secondary;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Regular.woff")
+      format("woff"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format("ttf"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Regular.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $cl-font-family-secondary;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Medium.woff")
+      format("woff"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Medium.ttf") format("ttf"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Medium.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $cl-font-family-secondary;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.woff")
+      format("woff"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf") format("ttf"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $cl-font-family-secondary;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/Chakra_Petch/ChakraPetch-Bold.woff") format("woff"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf") format("ttf"),
+    url("../assets/fonts/Chakra_Petch/ChakraPetch-Bold.eot") format("eot");
+  font-display: swap;
+}
+
+// Rubik
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-Light.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-Light.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-Light.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-Regular.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-Regular.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-Regular.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-Medium.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-Medium.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-Medium.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-SemiBold.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-SemiBold.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-SemiBold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-Bold.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-Bold.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-Bold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 800;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-ExtraBold.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-ExtraBold.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-ExtraBold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: $cl-font-family-third;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../assets/fonts/Rubik/Rubik-Black.woff") format("woff"),
+    url("../assets/fonts/Rubik/Rubik-Black.ttf") format("ttf"),
+    url("../assets/fonts/Rubik/Rubik-Black.eot") format("eot");
+  font-display: swap;
+}

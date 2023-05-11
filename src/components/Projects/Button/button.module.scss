@@ -1,0 +1,37 @@
+@import "src/scss/mixins";
+@import "src/scss/variables";
+
+.root {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 999px; //FIXME: DESIGNER RETARD
+  padding: 5px 20px 5px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: $cl-font-family-secondary;
+  color: white;
+  transition: 0.3s;
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &__icon {
+    display: flex;
+    align-self: center;
+  }
+
+  &:hover {
+    border-color: gold;
+    color: gold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px 2px gold;
+  }
+}
