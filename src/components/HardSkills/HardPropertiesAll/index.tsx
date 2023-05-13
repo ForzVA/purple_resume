@@ -17,7 +17,7 @@ const HardPropertiesAll: React.FC<HardPropertiseAllTypes> = ({
 }) => {
   return (
     <div className={styles.root}>
-      {allProperties.map((property: any) => {
+      {/* {allProperties.map((property: any) => {
         return (
           <HardProperty
             property={property}
@@ -26,7 +26,7 @@ const HardPropertiesAll: React.FC<HardPropertiseAllTypes> = ({
             setFakeLoader={setFakeLoader}
           />
         );
-      })}
+      })} */}
     </div>
   );
 };

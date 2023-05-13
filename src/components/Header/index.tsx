@@ -20,8 +20,6 @@ const Header: React.FC = () => {
     }
   }, [language]);
 
-  const changeLanguageHandler = () => {};
-
   return (
     <div className={styles.root}>
       <div
@@ -68,9 +66,6 @@ const Header: React.FC = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            onClick={() => {
-              changeLanguageHandler();
-            }}
           >
             {t("nav.softSkills")}
           </Link>

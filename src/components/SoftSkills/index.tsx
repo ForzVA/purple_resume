@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./softSkills.module.scss";
-import softSkillsData from "../../assets/data/softSkills";
 import SoftSkillBlock from "./SoftSkillsBlock";
 import Title from "../common/Title";
 import { useTranslation } from "react-i18next";
