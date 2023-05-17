@@ -5,11 +5,10 @@ import Title from "../common/Title";
 import { useTranslation } from "react-i18next";
 
 const SoftSkills: React.FC = () => {
-  const [skillOpenedBlock, setSkillOpenedBlock] = useState<string>("");
+  const [openedBlockIndex, setOpenedBlockIndex] = useState<number>(0);
   const { t } = useTranslation();
 
   const softSkills: Array<any> = t("softSkills", { returnObjects: true });
-  console.log(softSkills);
 
   return (
     <div className={styles.root} id="aboutMe">
@@ -20,8 +19,9 @@ const SoftSkills: React.FC = () => {
             title={skillTitle}
             text={textTitle}
             key={index}
-            setOpenedSkill={setSkillOpenedBlock}
-            openedSkill={skillOpenedBlock}
+            indx={index}
+            setOpenedBlockIndex={setOpenedBlockIndex}
+            openedBlockIndex={openedBlockIndex}
           />
         );
       })}

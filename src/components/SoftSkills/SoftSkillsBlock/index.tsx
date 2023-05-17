@@ -23,24 +23,26 @@ const blockAnimation = {
 type SoftSkillTypes = {
   title: string;
   text: string;
-  setOpenedSkill: Dispatch<SetStateAction<string>>;
-  openedSkill: string;
+  indx: number;
+  setOpenedBlockIndex: Dispatch<SetStateAction<number>>;
+  openedBlockIndex: number;
 };
 
 const SoftSkillBlock: React.FC<SoftSkillTypes> = ({
   title,
   text,
-  setOpenedSkill,
-  openedSkill,
+  indx,
+  setOpenedBlockIndex,
+  openedBlockIndex,
 }) => {
   const handlerSkillOpened = (title: string) => {
-    if (title !== openedSkill) {
-      return setOpenedSkill(title);
+    if (indx !== openedBlockIndex) {
+      return setOpenedBlockIndex(indx);
     }
-    setOpenedSkill("");
+    setOpenedBlockIndex(-1);
   };
 
-  const skillIsOpened = title === openedSkill;
+  const skillIsOpened = indx === openedBlockIndex;
 
   return (
     <motion.div

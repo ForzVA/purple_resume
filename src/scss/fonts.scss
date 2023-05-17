@@ -129,3 +129,14 @@
     url("../assets/fonts/Rubik/Rubik-Black.eot") format("eot");
   font-display: swap;
 }
+
+// Neucha
+@font-face {
+  font-family: $cl-font-family-forth;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Neucha/Neucha-Regular.woff") format("woff"),
+    url("../assets/fonts/Neucha/Neucha-Regular.ttf") format("ttf"),
+    url("../assets/fonts/Neucha/Neucha-Regular.eot") format("eot");
+  font-display: swap;
+}
