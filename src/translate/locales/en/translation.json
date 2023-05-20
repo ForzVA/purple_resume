@@ -116,5 +116,9 @@
     "completed": "Completed",
     "certificate": "Certificate",
     "link": "Link"
+  },
+  "projectLink": {
+    "git": "GIT",
+    "site": "SITE"
   }
 }

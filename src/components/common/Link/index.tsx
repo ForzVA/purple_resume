@@ -3,7 +3,7 @@ import clsx from "clsx";
 import styles from "./link.module.scss";
 
 type LinkProps = {
-  readonly text?: string;
+  readonly text?: string | null;
   readonly icon?: React.ReactNode;
   readonly className?: string;
   readonly style?: React.CSSProperties;

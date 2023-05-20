@@ -116,5 +116,9 @@
     "completed": "Завершено",
     "certificate": "Сертификат",
     "link": "Ссылка"
+  },
+  "projectLink": {
+    "git": "GIT",
+    "site": "САЙТ"
   }
 }

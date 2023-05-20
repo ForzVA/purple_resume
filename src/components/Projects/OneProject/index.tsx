@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React, { Dispatch, SetStateAction } from "react";
+import { useTranslation } from "react-i18next";
 import Github from "../../../icons/Github";
 import Www from "../../../icons/Www";
 import { ProjectType } from "../../../types/ProjectType";
@@ -21,6 +22,8 @@ const OneProject: React.FC<OneProjectTypes> = ({
   openTabId,
 }) => {
   const { id, images, title, tools, links } = project;
+
+  const { t, i18n } = useTranslation();
 
   return (
     <div className={styles.root}>
@@ -62,10 +65,14 @@ const OneProject: React.FC<OneProjectTypes> = ({
           </div>
 
           <div className={styles.root__content__info__buttons}>
-            <Link icon={<Www />} text="SITE" link={links.site} />
+            <Link
+              icon={<Www />}
+              text={t("projectLink.site")}
+              link={links.site}
+            />
             <Link
               icon={<Github className={styles.github} />}
-              text="GIT"
+              text={t("projectLink.git")}
               link={links.git}
             />
           </div>
