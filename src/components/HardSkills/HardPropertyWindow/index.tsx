@@ -27,7 +27,11 @@ const HardPropertyWindow: React.FC<HardPropertyWindowTypes> = ({
       ) : (
         <>
           <div className={styles.root__title}>{title}</div>
-          <div className={styles.root__description}>{text}</div>
+          <div className={styles.root__description}>
+            {text.map((paragraph: string) => {
+              return <p>{paragraph}</p>;
+            })}
+          </div>
         </>
       )}
     </div>

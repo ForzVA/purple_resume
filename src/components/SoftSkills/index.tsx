@@ -13,11 +13,11 @@ const SoftSkills: React.FC = () => {
   return (
     <div className={styles.root} id="aboutMe">
       <Title text={t("titles.softSkills")} />
-      {softSkills.map(({ skillTitle, textTitle }: any, index: any) => {
+      {softSkills.map(({ title, text }: any, index: any) => {
         return (
           <SoftSkillBlock
-            title={skillTitle}
-            text={textTitle}
+            title={title}
+            text={text}
             key={index}
             indx={index}
             setOpenedBlockIndex={setOpenedBlockIndex}
