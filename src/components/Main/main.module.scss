@@ -46,10 +46,17 @@
 
       gap: 20px;
 
-      & > li > svg {
+      & > li > a > svg {
         cursor: pointer;
         transition: 0.3s ease all;
         border-radius: 50%;
+      }
+
+      & > li > a > svg:hover {
+        cursor: pointer;
+        transition: 0.3s ease all;
+        border-radius: 50%;
+        transform: translateY(-5px);
       }
 
       &__github:hover {
@@ -112,7 +119,7 @@
     }
 
     &__img {
-      width: 400px;
+      width: 100%;
       position: relative;
       border-radius: 15px 30px 15px 30px;
       top: -3px;

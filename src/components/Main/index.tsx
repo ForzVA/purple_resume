@@ -8,6 +8,7 @@ import myPhoto from "../../assets/images/my-photo.png";
 import Duck from "../../icons/Frame/Duck";
 import Rope from "../../icons/Frame/Rope";
 import Divider from "../common/Divider";
+import SocialNetwork from "../common/SocialNetwork";
 
 const Main: React.FC = () => {
   const { t } = useTranslation();
@@ -27,13 +28,25 @@ const Main: React.FC = () => {
         </div>
         <ul className={styles.root__info__links}>
           <li>
-            <Github className={styles.root__info__links__github} />
+            <SocialNetwork
+              Component={Github}
+              link="https://github.com/ForzVA"
+              className={styles.root__info__links__github}
+            />
           </li>
           <li>
-            <LinkedIn className={styles.root__info__links__linkedIn} />
+            <SocialNetwork
+              Component={LinkedIn}
+              link="https://www.linkedin.com/in/alexvasilevsky/"
+              className={styles.root__info__links__linkedIn}
+            />
           </li>
           <li>
-            <Telegram className={styles.root__info__links__telegram} />
+            <SocialNetwork
+              Component={Telegram}
+              link="https://t.me/alexxvass"
+              className={styles.root__info__links__telegram}
+            />
           </li>
         </ul>
       </div>
