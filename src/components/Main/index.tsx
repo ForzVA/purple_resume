@@ -9,6 +9,8 @@ import Duck from "../../icons/Frame/Duck";
 import Rope from "../../icons/Frame/Rope";
 import Divider from "../common/Divider";
 import SocialNetwork from "../common/SocialNetwork";
+import Circle from "../../icons/Circle";
+import clsx from "clsx";
 
 const Main: React.FC = () => {
   const { t } = useTranslation();
@@ -50,11 +52,17 @@ const Main: React.FC = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.root__photo}>
-        <Duck className={styles.root__photo__duck} />
-        <Rope className={styles.root__photo__rope} />
-        <img className={styles.root__photo__img} src={myPhoto} alt="avatar" />
+      <div className={styles.root__portrait}>
+        <Circle className={clsx(styles.circle, styles.circle__up)} />
+        <Circle className={clsx(styles.circle, styles.circle__middle)} />
+        <Circle className={clsx(styles.circle, styles.circle__down)} />
+        <div className={styles.root__photo}>
+          <Duck className={styles.root__photo__duck} />
+          <Rope className={styles.root__photo__rope} />
+          <img className={styles.root__photo__img} src={myPhoto} alt="avatar" />
+        </div>
       </div>
+      <Circle className={clsx(styles.circle, styles.circle__right)} />
     </div>
   );
 };
