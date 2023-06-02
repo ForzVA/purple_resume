@@ -56,13 +56,13 @@ const Main: React.FC = () => {
         <Circle className={clsx(styles.circle, styles.circle__up)} />
         <Circle className={clsx(styles.circle, styles.circle__middle)} />
         <Circle className={clsx(styles.circle, styles.circle__down)} />
+        <Circle className={clsx(styles.circle, styles.circle__right)} />
         <div className={styles.root__photo}>
           <Duck className={styles.root__photo__duck} />
           <Rope className={styles.root__photo__rope} />
           <img className={styles.root__photo__img} src={myPhoto} alt="avatar" />
         </div>
       </div>
-      <Circle className={clsx(styles.circle, styles.circle__right)} />
     </div>
   );
 };

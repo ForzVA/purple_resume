@@ -100,7 +100,6 @@
       align-items: center;
       justify-content: flex-start;
       color: white;
-      // background-color: rgb(68, 68, 68);
       flex-wrap: wrap;
       align-content: flex-start;
       padding: 20px;
@@ -132,12 +131,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    border-radius: 30px;
 
     & > img {
       width: 100%;
       height: 300px;
       object-fit: cover;
-      border-radius: 30px;
     }
   }
 }
