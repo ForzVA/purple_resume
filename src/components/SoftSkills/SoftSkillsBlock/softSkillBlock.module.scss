@@ -33,7 +33,7 @@
     font-size: 30px;
     text-align: left;
     font-weight: 300;
-    line-height: calc(30px * 1.4);
+    line-height: 1.4;
 
     &_open {
       max-height: 500px;
@@ -76,6 +76,7 @@
 
     &_text {
       font-size: 20px;
+      line-height: 1.5;
     }
   }
 }
@@ -86,7 +87,25 @@
     &_title {
       margin: 10px 0px;
       &_text {
-        font-size: 20px;
+        font-size: 25px;
+      }
+    }
+    &_text {
+      font-size: 16px;
+      &_open {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .block {
+    padding: 10px 10px;
+    &_title {
+      margin: 10px 0px;
+      &_text {
+        font-size: 18px;
       }
     }
     &_text {
