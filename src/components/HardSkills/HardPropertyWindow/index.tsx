@@ -18,6 +18,9 @@ const HardPropertyWindow: React.FC<HardPropertyWindowTypes> = ({
         <div className={styles.root__searchPanel__path}>
           alexandervasilesky/hardSkills/{title}
         </div>
+        <div className={styles.root__searchPanel__shortPath}>
+          .../hardSkills/{title}
+        </div>
         <div className={styles.root__searchPanel__time}>10:09 </div>
       </div>
       {fakeLoader ? (

@@ -33,3 +33,155 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .root {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 30px 0;
+
+    &__text {
+      position: relative;
+      display: inline-block;
+      font-size: 55px;
+      font-weight: 500;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 2px;
+        background: white;
+      }
+
+      &::before {
+        right: 100%;
+        margin-right: 15px;
+      }
+
+      &::after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 30px 0;
+
+    &__text {
+      position: relative;
+      display: inline-block;
+      font-size: 55px;
+      font-weight: 500;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 2px;
+        background: white;
+      }
+
+      &::before {
+        right: 100%;
+        margin-right: 15px;
+      }
+
+      &::after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .root {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 30px 0;
+
+    &__text {
+      position: relative;
+      display: inline-block;
+      font-size: 50px;
+      font-weight: 500;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 2px;
+        background: white;
+      }
+
+      &::before {
+        right: 100%;
+        margin-right: 15px;
+      }
+
+      &::after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .root {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 30px 0;
+
+    &__text {
+      position: relative;
+      display: inline-block;
+      font-size: 35px;
+      font-weight: 500;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 2px;
+        background: white;
+      }
+
+      &::before {
+        right: 100%;
+        margin-right: 15px;
+      }
+
+      &::after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}

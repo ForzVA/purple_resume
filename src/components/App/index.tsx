@@ -23,7 +23,7 @@ const App: React.FC = () => {
         <Element name="hard_skills">
           <HardSkills />
         </Element>
-        <Element name="soft_skills">
+        {/* <Element name="soft_skills">
           <SoftSkills />
         </Element>
         <Element name="courses">
@@ -31,7 +31,7 @@ const App: React.FC = () => {
         </Element>
         <Element name="projects">
           <Projects />
-        </Element>
+        </Element> */}
       </Container>
       {/* <Footer /> */}
     </>

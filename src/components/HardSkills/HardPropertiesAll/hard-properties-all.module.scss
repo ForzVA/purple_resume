@@ -4,3 +4,13 @@
   flex-wrap: wrap;
   margin: 50px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .root {
+    display: flex;
+    justify-content: center;
+    gap: none;
+    flex-wrap: wrap;
+    margin: 20px 0 30px;
+  }
+}
