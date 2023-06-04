@@ -14,29 +14,23 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      // flex-direction: column;
-      // justify-content: space-around;
-      // margin: auto 140px;
     }
   }
 }
 
-// @media (max-width: 640px) {
-//   .courses {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 20px;
-//     padding-top: 100px;
-
-//     &_block {
-//       width: auto;
-//       display: flex;
-//       flex-wrap: wrap;
-//       flex-direction: row;
-//       justify-content: space-around;
-//       margin: 0 auto;
-
-//       // max-width: 3000px;
-//     }
-//   }
-// }
+@media (max-width: 640px) {
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 100px;
+    &_block {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
+  }
+}
