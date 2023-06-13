@@ -18,6 +18,10 @@ const Header: React.FC = () => {
   const [language, setLanguage] = useState<boolean>(true);
   const { t, i18n } = useTranslation();
 
+  toggle && window.innerWidth <= 1024
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "scroll");
+
   const changeLanguage = () => {
     if (language === true) {
       i18n.changeLanguage("ru-RU");
@@ -26,8 +30,6 @@ const Header: React.FC = () => {
       i18n.changeLanguage("en-US");
     }
   };
-
-  console.log(i18n.language);
 
   React.useEffect(() => {
     i18n.language === "en-US" ? setLanguage(true) : setLanguage(false);
@@ -78,6 +80,7 @@ const Header: React.FC = () => {
                   spy={true}
                   smooth={true}
                   offset={-50}
+                  onClick={() => setToggle(false)}
                 >
                   {t(`nav.${navElements[navElement]}`)}
                 </Link>
