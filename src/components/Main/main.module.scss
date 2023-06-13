@@ -71,7 +71,6 @@
   }
 
   &__photo {
-    position: relative;
     display: flex;
     padding: 0 32px;
     flex-direction: column;
@@ -155,9 +154,6 @@
   }
 }
 
-// @media screen and (max-width: 1178px) {
-// }
-
 @media screen and (max-width: 1024px) {
   .root {
     flex-direction: column-reverse;
@@ -179,8 +175,7 @@
     }
 
     &__portrait {
-      position: relative;
-      margin-top: 50px;
+      margin-top: 70px;
     }
 
     &__photo {
@@ -205,6 +200,10 @@
           font-size: 35px;
         }
       }
+    }
+
+    &__portrait {
+      margin-top: 30px;
     }
 
     &__photo {
@@ -240,6 +239,10 @@
 
 @media screen and (max-width: 480px) {
   .root {
+    &__portrait {
+      margin-top: 20px;
+    }
+
     &__info {
       &__text {
         margin-bottom: 5px;
@@ -268,6 +271,38 @@
       &__duck {
         top: 32px;
         width: 70px;
+      }
+    }
+  }
+}
+
+// Медиа для размера шрифта
+@media screen and (max-width: 464px) {
+  .root {
+    &__info {
+      &__text {
+        &__name {
+          font-size: 36px;
+        }
+        &__position {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+// Медиа для размера шрифта
+@media screen and (max-width: 376px) {
+  .root {
+    &__info {
+      &__text {
+        &__name {
+          font-size: 35px;
+        }
+        &__position {
+          font-size: 25px;
+        }
       }
     }
   }
