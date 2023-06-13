@@ -37,11 +37,15 @@ $cl-colors: (
     shadow: #ff00f5,
     windowBack: rgba(217, 217, 217, 0.1),
     searchPanel: rgba(217, 217, 217, 0.1),
-    activeText: rgba(101, 0, 103),
+    activeText: rgba(58, 0, 59, 0.5),
   ),
-
   certificates: (
     background: rgba(101, 0, 103, 0.8),
     shadow: rgba(255, 0, 245, 0.8),
+  ),
+  icons: (
+    gitHub: #d9ecff,
+    linkedIn: #3b82f6,
+    telegram: #2aabee,
   ),
 );

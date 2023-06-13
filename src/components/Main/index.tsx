@@ -33,21 +33,30 @@ const Main: React.FC = () => {
             <SocialNetwork
               Component={Github}
               link="https://github.com/ForzVA"
-              className={styles.root__info__links__github}
+              className={clsx(
+                styles.root__info__links__github,
+                styles.root__info__links__icon
+              )}
             />
           </li>
           <li>
             <SocialNetwork
               Component={LinkedIn}
               link="https://www.linkedin.com/in/alexvasilevsky/"
-              className={styles.root__info__links__linkedIn}
+              className={clsx(
+                styles.root__info__links__linkedIn,
+                styles.root__info__links__icon
+              )}
             />
           </li>
           <li>
             <SocialNetwork
               Component={Telegram}
               link="https://t.me/alexxvass"
-              className={styles.root__info__links__telegram}
+              className={clsx(
+                styles.root__info__links__telegram,
+                styles.root__info__links__icon
+              )}
             />
           </li>
         </ul>
