@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/purple_resume/static/css/main.ecc32385.css",
-    "main.js": "/purple_resume/static/js/main.1db5c8ad.js",
+    "main.css": "/purple_resume/static/css/main.cfc7c22e.css",
+    "main.js": "/purple_resume/static/js/main.3468fdd7.js",
     "static/media/my-photo.png": "/purple_resume/static/media/my-photo.350bf664fafe64cb7531.png",
     "static/media/Rubik-Medium.eot": "/purple_resume/static/media/Rubik-Medium.11ceb920d4aa8cd517b9.eot",
     "static/media/Rubik-ExtraBold.eot": "/purple_resume/static/media/Rubik-ExtraBold.f14adf8e3d2c459e2025.eot",
@@ -47,11 +47,11 @@
     "static/media/BebasNeue-Regular.woff": "/purple_resume/static/media/BebasNeue-Regular.8c068dcb1e047e0c2db2.woff",
     "index.html": "/purple_resume/index.html",
     "static/media/getFetch.cjs": "/purple_resume/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.ecc32385.css.map": "/purple_resume/static/css/main.ecc32385.css.map",
-    "main.1db5c8ad.js.map": "/purple_resume/static/js/main.1db5c8ad.js.map"
+    "main.cfc7c22e.css.map": "/purple_resume/static/css/main.cfc7c22e.css.map",
+    "main.3468fdd7.js.map": "/purple_resume/static/js/main.3468fdd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecc32385.css",
-    "static/js/main.1db5c8ad.js"
+    "static/css/main.cfc7c22e.css",
+    "static/js/main.3468fdd7.js"
   ]
 }
