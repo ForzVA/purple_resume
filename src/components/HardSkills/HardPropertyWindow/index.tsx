@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Clock from "../../common/Clock";
 import Spinner from "../../common/Spinner";
 import styles from "./hard-property-window.module.scss";
 
@@ -16,12 +17,12 @@ const HardPropertyWindow: React.FC<HardPropertyWindowTypes> = ({
     <div className={styles.root}>
       <div className={styles.root__searchPanel}>
         <div className={styles.root__searchPanel__path}>
-          alexandervasilesky/hardSkills/{title}
+          alexandervasilevsky/hardSkills/{title}
         </div>
         <div className={styles.root__searchPanel__shortPath}>
           .../hardSkills/{title}
         </div>
-        <div className={styles.root__searchPanel__time}>10:09 </div>
+        <Clock className={styles.root__searchPanel__time} />
       </div>
       {fakeLoader ? (
         <div className={styles.root__spinner}>
