@@ -17,7 +17,6 @@
       flex-direction: column;
       align-items: left;
       font-family: $cl-font-family-forth;
-      margin-bottom: 15px;
       z-index: 5;
 
       &__name {
@@ -167,6 +166,9 @@
         margin-bottom: 8px;
 
         &__icon {
+          width: 60px;
+          height: 60px;
+
           &:hover {
             transform: translateY(0px);
           }
@@ -190,7 +192,7 @@
       margin-top: auto;
 
       &__text {
-        padding: 10px 0;
+        padding: 10px 0 5px;
 
         &__name {
           font-size: 44px;
@@ -198,6 +200,13 @@
 
         &__position {
           font-size: 35px;
+        }
+      }
+
+      &__links {
+        &__icon {
+          width: 55px;
+          height: 55px;
         }
       }
     }
@@ -245,7 +254,7 @@
 
     &__info {
       &__text {
-        margin-bottom: 5px;
+        padding: 10px 0 0px;
 
         &__name {
           font-size: 44px;
@@ -258,6 +267,11 @@
 
       &__links {
         gap: 10px;
+
+        &__icon {
+          width: 55px;
+          height: 55px;
+        }
       }
     }
 
