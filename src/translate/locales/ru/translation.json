@@ -95,7 +95,7 @@
   "courses": [
     {
       "image": "./images/skill_factory.png",
-      "cerfUrl": "https://skillfactory.ru/python-fullstack-web-developer",
+      "cerfUrl": "",
       "title": "Fullstack-разработчик на Python",
       "completed": ">70%",
       "time": "18 месяцев",
@@ -131,7 +131,8 @@
     "technologies": "Технологии",
     "completed": "Завершено",
     "certificate": "Сертификат",
-    "link": "Ссылка"
+    "link": "Ссылка",
+    "emptyLink": "Отсутствует"
   },
   "projectLink": {
     "git": "GIT",

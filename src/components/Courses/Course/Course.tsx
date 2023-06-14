@@ -46,9 +46,13 @@ const Course: React.FC<CourseTypes> = ({ course }) => {
           </p>
           <p>
             {t("coursesDescription.certificate")}: &zwj;
-            <a href={cerfUrl} target="_blank" rel="noreferrer">
-              {t("coursesDescription.link")}
-            </a>
+            {cerfUrl ? (
+              <a href={cerfUrl} target="_blank" rel="noreferrer">
+                {t("coursesDescription.link")}
+              </a>
+            ) : (
+              <span>{t("coursesDescription.emptyLink")}</span>
+            )}
           </p>
         </div>
       </div>

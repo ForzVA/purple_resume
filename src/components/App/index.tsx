@@ -26,9 +26,6 @@ const App: React.FC = () => {
         <Element name="soft_skills">
           <SoftSkills />
         </Element>
-        <Element name="courses">
-          <Courses />
-        </Element>
         {/* <Element name="projects">
           <Projects />
         </Element> */}
