@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/purple_resume/static/css/main.cfc7c22e.css",
+    "main.css": "/purple_resume/static/css/main.114e1fcb.css",
     "main.js": "/purple_resume/static/js/main.3468fdd7.js",
     "static/media/my-photo.png": "/purple_resume/static/media/my-photo.350bf664fafe64cb7531.png",
     "static/media/Rubik-Medium.eot": "/purple_resume/static/media/Rubik-Medium.11ceb920d4aa8cd517b9.eot",
@@ -47,11 +47,11 @@
     "static/media/BebasNeue-Regular.woff": "/purple_resume/static/media/BebasNeue-Regular.8c068dcb1e047e0c2db2.woff",
     "index.html": "/purple_resume/index.html",
     "static/media/getFetch.cjs": "/purple_resume/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.cfc7c22e.css.map": "/purple_resume/static/css/main.cfc7c22e.css.map",
+    "main.114e1fcb.css.map": "/purple_resume/static/css/main.114e1fcb.css.map",
     "main.3468fdd7.js.map": "/purple_resume/static/js/main.3468fdd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfc7c22e.css",
+    "static/css/main.114e1fcb.css",
     "static/js/main.3468fdd7.js"
   ]
 }
