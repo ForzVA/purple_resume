@@ -9,4 +9,5 @@ export type ProjectType = {
   images: string[];
   links: ProjectSocialLinsk;
   tools: string[];
+  description: string;
 };

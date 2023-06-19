@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import addZeroForNumber from "../../../helpers/addZeroForNumber";
 
 type ClockType = {
   className?: string;
@@ -20,7 +21,7 @@ const Clock: React.FC<ClockType> = ({ className }) => {
 
   return (
     <span className={className}>
-      {date.getHours()}:{date.getMinutes()}
+      {addZeroForNumber(date.getHours())}:{addZeroForNumber(date.getMinutes())}
     </span>
   );
 };

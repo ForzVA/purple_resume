@@ -4,7 +4,6 @@ import Github from "../../icons/Github";
 import LinkedIn from "../../icons/Linkedin";
 import Telegram from "../../icons/Telegram";
 import styles from "./main.module.scss";
-import myPhoto from "../../assets/images/my-photo.png";
 import Duck from "../../icons/Frame/Duck";
 import Rope from "../../icons/Frame/Rope";
 import Divider from "../common/Divider";
@@ -69,7 +68,11 @@ const Main: React.FC = () => {
         <div className={styles.root__photo}>
           <Duck className={styles.root__photo__duck} />
           <Rope className={styles.root__photo__rope} />
-          <img className={styles.root__photo__img} src={myPhoto} alt="avatar" />
+          <img
+            className={styles.root__photo__img}
+            src={process.env.PUBLIC_URL + "/images/my-photo.png"}
+            alt="avatar"
+          />
         </div>
       </div>
     </div>

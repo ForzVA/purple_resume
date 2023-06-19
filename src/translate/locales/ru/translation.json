@@ -94,7 +94,7 @@
   ],
   "courses": [
     {
-      "image": "./images/skill_factory.png",
+      "image": "./images/courses/skill_factory.png",
       "cerfUrl": "",
       "title": "Fullstack-разработчик на Python",
       "completed": ">70%",
@@ -102,7 +102,7 @@
       "subject": "JS, Python"
     },
     {
-      "image": "./images/react_full_stashchuk.jpg",
+      "image": "./images/courses/react_full_stashchuk.jpg",
       "cerfUrl": "https://www.udemy.com/certificate/UC-1258ef1f-207a-4ede-8861-9792a0565590/",
       "title": "React - Полный курс по React",
       "completed": "100%",
@@ -110,7 +110,7 @@
       "subject": "React"
     },
     {
-      "image": "./images/js_full_stashchuk.jpg",
+      "image": "./images/courses/js_full_stashchuk.jpg",
       "cerfUrl": "https://www.udemy.com/certificate/UC-e82d5550-e959-4901-b517-b93c242527e0/",
       "title": "JavaScript - Полный курс по JS",
       "completed": "100%",
@@ -118,7 +118,7 @@
       "subject": "JavaScript"
     },
     {
-      "image": "./images/docker_full_stashchuk.jpg",
+      "image": "./images/courses/docker_full_stashchuk.jpg",
       "cerfUrl": "https://www.udemy.com/certificate/UC-027b44a8-1adc-4621-bdf6-aaadebed1411/",
       "title": "Docker - Полный курс Docker",
       "completed": "100%",
@@ -137,5 +137,26 @@
   "projectLink": {
     "git": "GIT",
     "site": "САЙТ"
-  }
+  },
+  "projectAdditions": {
+    "technologies": "Технологии",
+    "description": "Описание",
+    "noPhoto": "./images/noPhotoRu.png"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Фиолетовое резюме",
+      "images": [
+        "./images/purpleResume/first.png",
+        "./images/purpleResume/second.png"
+      ],
+      "links": {
+        "git": "https://github.com/ForzVA/purple_resume",
+        "site": "https://forzva.github.io/purple_resume/"
+      },
+      "tools": ["React", "TypeScript", "i18n", "SCSS"],
+      "description": "Личное резюме составленное для практики css, i18n. Является второй версией моего резюме. Сайт имеет адаптивную вёрстку."
+    }
+  ]
 }

@@ -9,6 +9,8 @@ import Fancybox from "../../common/Fancybox";
 import Link from "../../common/Link";
 import Button from "../Button";
 import styles from "./one-project.module.scss";
+import noPhoto from "../../../assets/images/noPhoto.png";
+import addZeroForNumber from "../../../helpers/addZeroForNumber";
 
 type OneProjectTypes = {
   setOpenTabId: Dispatch<SetStateAction<number>>;
@@ -21,34 +23,49 @@ const OneProject: React.FC<OneProjectTypes> = ({
   project,
   openTabId,
 }) => {
-  const { id, images, title, tools, links } = project;
+  const { id, images, title, tools, links, description } = project;
+  console.log(project.images);
 
   const { t, i18n } = useTranslation();
 
   return (
     <div className={styles.root}>
-      <div className={styles.root__tab} onClick={() => setOpenTabId(id)}>
-        <p className={styles.root__tab__title}>{title}</p>
-        <p className={styles.root__tab__number}>{id}</p>
+      <div className={styles.root__title}>
+        <span className={styles.root__title__text}>{title}</span>
+        <span className={styles.root__title__number}>
+          {addZeroForNumber(id)}
+        </span>
       </div>
-      <div
-        className={clsx(
-          styles.root__content,
-          id === openTabId && styles.root__content__active
-        )}
-      >
-        <div className={styles.root__content__info}>
-          <div className={styles.root__content__info__title}>{title}</div>
-          <div className={styles.root__content__info__picture}>
-            <Fancybox
+      <div className={styles.root__main}>
+        <div className={styles.root__main__carousel}>
+          <Fancybox
+            options={{
+              Carousel: {
+                infinite: false,
+              },
+            }}
+          >
+            <Carousel
+              className={styles.carousel}
               options={{
-                Carousel: {
-                  infinite: false,
+                Dots: {
+                  classes: {
+                    list: clsx(styles.carousel__dots, "f-carousel__dots"),
+                    isCurrent: clsx(
+                      styles.carousel__dots_current,
+                      "is-current"
+                    ),
+                  },
+                },
+                Navigation: {
+                  classes: {
+                    button: clsx(styles.carousel__nav, "f-button"),
+                  },
                 },
               }}
             >
-              <Carousel className={styles.carousel}>
-                {images.map((image) => (
+              {images.length ? (
+                images.map((image) => (
                   <div
                     className={clsx(
                       "f-carousel__slide",
@@ -59,32 +76,59 @@ const OneProject: React.FC<OneProjectTypes> = ({
                   >
                     <img alt="project_img" src={image} />
                   </div>
-                ))}
-              </Carousel>
-            </Fancybox>
-          </div>
-
-          <div className={styles.root__content__info__buttons}>
+                ))
+              ) : (
+                <div
+                  className={clsx("f-carousel__slide", styles.carousel__slide)}
+                  data-fancybox={`gallery-0`}
+                  data-src={t("projectAdditions.noPhoto")}
+                >
+                  <img
+                    alt="project_img"
+                    src={`${t("projectAdditions.noPhoto")}`}
+                  />
+                </div>
+              )}
+            </Carousel>
+          </Fancybox>
+        </div>
+        <div className={styles.root__main__info}>
+          <div className={styles.root__main__info__links}>
             <Link
               icon={<Www />}
               text={t("projectLink.site")}
               link={links.site}
+              className={styles.root__main__info__links__link}
             />
             <Link
               icon={<Github className={styles.github} />}
               text={t("projectLink.git")}
               link={links.git}
+              className={styles.root__main__info__links__link}
             />
           </div>
-        </div>
-        <div className={styles.root__content__tools}>
-          {tools.map((tool) => {
-            return (
-              <div className={styles.root__content__tools__tool}>{tool}</div>
-            );
-          })}
+          <span className={styles.root__main__info__techTitle}>
+            {t("projectAdditions.technologies")}:
+          </span>
+          <div className={styles.toolsWrapper}>
+            <div className={styles.root__main__info__tools}>
+              {tools.map((tool) => {
+                return (
+                  <div className={styles.root__main__info__tools__tool}>
+                    {tool}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
+      <p className={styles.root__description}>
+        <span className={styles.root__description__title}>
+          {t("projectAdditions.description")}:
+        </span>
+        {description}
+      </p>
     </div>
   );
 };

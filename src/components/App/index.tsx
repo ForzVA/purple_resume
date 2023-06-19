@@ -29,9 +29,9 @@ const App: React.FC = () => {
         <Element name="courses">
           <Courses />
         </Element>
-        {/* <Element name="projects">
+        <Element name="projects">
           <Projects />
-        </Element> */}
+        </Element>
       </Container>
       {/* <Footer /> */}
     </>
