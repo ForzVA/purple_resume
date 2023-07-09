@@ -8,7 +8,7 @@ const Duck: React.FC<DuckTypes> = ({ className }) => {
   return (
     <svg
       className={className}
-      width="95"
+      width="80"
       height="73"
       viewBox="0 0 101 89"
       fill="none"

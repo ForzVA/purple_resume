@@ -66,8 +66,10 @@ const Main: React.FC = () => {
         <Circle className={clsx(styles.circle, styles.circle__down)} />
         <Circle className={clsx(styles.circle, styles.circle__right)} />
         <div className={styles.root__photo}>
-          <Duck className={styles.root__photo__duck} />
-          <Rope className={styles.root__photo__rope} />
+          <div className={styles.root__photo__duckRopeWrapper}>
+            <Duck className={styles.root__photo__duck} />
+            <Rope className={styles.root__photo__rope} />
+          </div>
           <img
             className={styles.root__photo__img}
             src={process.env.PUBLIC_URL + "/images/my-photo.png"}
