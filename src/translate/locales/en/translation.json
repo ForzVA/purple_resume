@@ -158,5 +158,8 @@
       "tools": ["React", "TypeScript", "i18n", "SCSS"],
       "description": "Personal resume compiled for css, i18n practice. This resume is the second version. The site has an adaptive layout."
     }
-  ]
+  ],
+  "promptProject": {
+    "title": "I fix finished projects or make new ones."
+  }
 }

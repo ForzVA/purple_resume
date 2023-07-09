@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import OneProject from "../OneProject";
+import PromptProject from "../PromptProject";
 import styles from "./all-projects.module.scss";
 
 const AllProjects: React.FC = () => {
@@ -20,6 +21,7 @@ const AllProjects: React.FC = () => {
           />
         );
       })}
+      <PromptProject />
     </div>
   );
 };

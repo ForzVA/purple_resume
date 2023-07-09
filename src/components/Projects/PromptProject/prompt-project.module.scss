@@ -1,0 +1,63 @@
+.root {
+  font-size: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px dashed gray;
+  border-radius: 15px;
+  padding: 20px;
+
+  &__title {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 30px;
+    animation: flickering 4s infinite;
+  }
+
+  &__smile {
+    width: 100px;
+    height: 100px;
+    fill: rgba(255, 255, 255, 0.6);
+    animation: flickering 4s infinite;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .root {
+    font-size: 35px;
+
+    &__title {
+      margin: 20px;
+    }
+
+    &__smile {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .root {
+    font-size: 28px;
+
+    &__title {
+      margin: 20px;
+    }
+
+    &__smile {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
