@@ -23,6 +23,12 @@ body {
   font-family: $cl-font-family-third, "Arial";
 }
 
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 // code {
 //   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 //     monospace;
