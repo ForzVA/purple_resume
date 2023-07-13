@@ -1,4 +1,35 @@
 .root {
-  height: 120px;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(101, 0, 103, 0.4);
+  backdrop-filter: blur(38px);
+  box-shadow: 7px -6px 20px 0px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  // background-color: white;
+
+  &__links {
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+
+    &__icon {
+      background-color: transparent;
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__date {
+    opacity: 0.5;
+  }
 }
