@@ -1,6 +1,3 @@
-// import { motion } from "framer-motion";
-// import ArrowDown from "../../../assets/svg/ArrowDown";
-// import ArrowUp from "../../../assets/svg/ArrowUp";
 import s from "./softSkillBlock.module.scss";
 import React, { Dispatch, SetStateAction } from "react";
 import clsx from "clsx";

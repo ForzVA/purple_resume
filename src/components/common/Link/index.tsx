@@ -14,9 +14,8 @@ type LinkProps = {
 };
 
 const Link: React.FC<LinkProps> = ({
-  text = "кукуха",
+  text,
   icon,
-  disabled = false,
   iconLeft = true,
   link = "",
   className,

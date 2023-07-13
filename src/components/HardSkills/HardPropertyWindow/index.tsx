@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Clock from "../../common/Clock";
 import Spinner from "../../common/Spinner";
 import styles from "./hard-property-window.module.scss";

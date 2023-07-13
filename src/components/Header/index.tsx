@@ -33,7 +33,7 @@ const Header: React.FC = () => {
 
   React.useEffect(() => {
     i18n.language === "en-US" ? setLanguage(true) : setLanguage(false);
-  });
+  }, [i18n.language]);
 
   return (
     <header className={clsx(styles.root, toggle ? styles.root_menuOpen : null)}>

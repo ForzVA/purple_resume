@@ -6,7 +6,7 @@ import styles from "./all-projects.module.scss";
 
 const AllProjects: React.FC = () => {
   const [openTabId, setOpenTabId] = useState(1);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const projects: Array<any> = t("projects", { returnObjects: true });
 

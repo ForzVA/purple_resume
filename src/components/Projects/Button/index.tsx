@@ -13,7 +13,7 @@ type ButtonProps = {
 };
 
 const Button: React.FC<ButtonProps> = ({
-  text = "кукуха",
+  text,
   icon,
   disabled = false,
   iconLeft = true,

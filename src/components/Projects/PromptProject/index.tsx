@@ -3,7 +3,7 @@ import Smile from "../../../icons/Emoji/Smile";
 import styles from "./prompt-project.module.scss";
 
 const PromptProject = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.root}>

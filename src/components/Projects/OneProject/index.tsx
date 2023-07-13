@@ -7,9 +7,7 @@ import { ProjectType } from "../../../types/ProjectType";
 import Carousel from "../../common/Carousel";
 import Fancybox from "../../common/Fancybox";
 import Link from "../../common/Link";
-import Button from "../Button";
 import styles from "./one-project.module.scss";
-import noPhoto from "../../../assets/images/noPhoto.png";
 import addZeroForNumber from "../../../helpers/addZeroForNumber";
 
 type OneProjectTypes = {
@@ -24,9 +22,8 @@ const OneProject: React.FC<OneProjectTypes> = ({
   openTabId,
 }) => {
   const { id, images, title, tools, links, description } = project;
-  console.log(project.images);
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.root}>

@@ -7,7 +7,6 @@ import Header from "../Header";
 import Main from "../Main";
 import SoftSkills from "../SoftSkills";
 import { Element } from "react-scroll";
-import styles from "./app.module.scss";
 import Footer from "../Footer";
 import Projects from "../Projects";
 
@@ -33,7 +32,7 @@ const App: React.FC = () => {
           <Projects />
         </Element>
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

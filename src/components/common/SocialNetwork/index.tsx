@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import styles from "./social-network.module.scss";
+import React from "react";
 
 type SocialNetworkType = {
   link: string;

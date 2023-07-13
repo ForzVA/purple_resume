@@ -1,4 +1,3 @@
-import React from "react";
 import Github from "../../icons/Github";
 import LinkedIn from "../../icons/Linkedin";
 import Telegram from "../../icons/Telegram";
